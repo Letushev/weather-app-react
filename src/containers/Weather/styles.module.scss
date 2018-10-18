@@ -1,0 +1,27 @@
+@import '../../scss/variables';
+
+.searchContainer {
+  margin: 36px 0;
+  text-align: center;
+}
+
+.cityContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  .cityName {
+    margin-right: 16px;
+    color: $primaryTextColor;
+    font-weight: normal;
+  }
+
+  .cityFavoriteIcon {
+    width: 24px;
+    cursor: pointer;
+  }
+  
+  .cityFavoriteIconActive {
+    color: $red;
+  }
+}

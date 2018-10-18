@@ -3,10 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "classnames": "^2.2.6",
+    "google-map-react": "^1.0.9",
     "node-sass": "^4.9.3",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
-    "react-scripts": "2.0.4"
+    "react-load-script": "0.0.6",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.0.4",
+    "react-tooltip": "^3.9.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -22,5 +27,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "prop-types": "^15.6.2"
+  }
 }

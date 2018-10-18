@@ -1,0 +1,65 @@
+@import '../../scss/variables';
+
+.forecastContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 23%;
+  margin: 24px 0;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(black, .7);
+
+  .cardHead {
+    overflow: auto;
+    padding: 16px;
+    background-color: $primaryColor;
+    color: #fff;
+
+    .cardDay {
+      margin: 0 0 8px;
+      font-weight: normal;
+      font-size: 1.4rem;
+    }
+
+    .cardText {
+      margin: 0;
+      font-size: .9rem;
+    }
+  }
+
+  .cardBody {
+    padding: 16px;
+
+    .cardMainInfo {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      .temp {
+        font-size: 1.5rem;
+      }
+    }
+
+    .table {
+      width: 100%;
+      font-size: .8rem;
+
+      .th {
+        font-weight: normal;
+        text-align: left;
+      }
+
+      .td {
+        text-align: center;
+        
+        .wind {
+          font-size: .9rem;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}

@@ -1,12 +1,22 @@
 import React, { Component } from 'react';
+import { Switch, Route, Redirect } from 'react-router-dom';
+import Weather from './containers/Weather';
+import Favorites from './containers/Favorites';
+import Header from './components/Header';
 import styles from './App.module.scss';
 
 class App extends Component {
   render() {
     return (
       <>
-        <h1>Hello, World!</h1>
-        <p className={styles.test}>Are SCSS and CSS modules working?</p>
+        <Header />
+        <main className={styles.main}>
+          <Switch>
+            <Route exact path='/' component={Weather} />
+            <Route exact path='/favorites' component={Favorites} />
+            <Redirect to='/' />
+          </Switch>
+        </main>
       </>
     );
   }
